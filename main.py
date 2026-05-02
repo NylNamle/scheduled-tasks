@@ -26,7 +26,7 @@ if today in birthdays:
     print(person["name"])
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=PASSWORD)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
 
         if person["name"] == "Self":
             with open("letter_templates/letter_1.txt", "r", encoding="utf-8") as f:
