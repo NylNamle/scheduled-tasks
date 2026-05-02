@@ -7,8 +7,7 @@
 
 
 from datetime import dt
-import pandas
-import random
+import pandas as pd
 import smtplib
 import os
 
