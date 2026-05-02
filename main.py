@@ -39,5 +39,5 @@ if today in birthdays:
         connection.sendmail(
             from_addr=MY_EMAIL,
             to_addrs=person["email"],
-            msg=msg.encode("utf-8")
+            msg=msg
         )
